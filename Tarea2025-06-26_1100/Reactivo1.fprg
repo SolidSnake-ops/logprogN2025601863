@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo1"/>
+        <attribute name="authors" value="Juan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-24 01:18:56 p. m."/>
+        <attribute name="created" value="SnVhbjtMQVBUT1AtU0wwTU9URzk7MjAyNS0wMy0yNDsxMDowNDoxMiBhLiBtLjsyOTI1"/>
+        <attribute name="edited" value="SnVhbjtMQVBUT1AtU0wwTU9URzk7MjAyNS0wMy0yNDswMToxODo1NiBwLiBtLjsxOzMwNjE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precioPorDona, piezas, totalPagar" type="Integer" array="False" size=""/>
+            <assign variable="precioPorDona" expression="10"/>
+            <output expression="&quot;&#191;Cuantas piezas compradas?&quot;" newline="True"/>
+            <input variable="piezas"/>
+            <if expression="piezas&gt;=50">
+                <then>
+                    <output expression="&quot;Con descuento de $2.00 por dona&quot;" newline="True"/>
+                    <assign variable="precioPorDona" expression="10-2"/>
+                </then>
+                <else>
+                    <if expression="piezas&gt;=30">
+                        <then>
+                            <output expression="&quot;Con descuento de $1.00 por dona&quot;" newline="True"/>
+                            <assign variable="precioPorDona" expression="10-1"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Sin descuento&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="totalPagar" expression="piezas * precioPorDona"/>
+            <output expression="&quot;Total a pagar:&quot;" newline="True"/>
+            <output expression="totalPagar" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
