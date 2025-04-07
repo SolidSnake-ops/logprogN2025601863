@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="Juan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-05 08:09:57 p. m."/>
+        <attribute name="created" value="SnVhbjtMQVBUT1AtU0wwTU9URzk7MjAyNS0wNC0wNTsxMjoyMDo1OCBwLiBtLjsyOTUw"/>
+        <attribute name="edited" value="SnVhbjtMQVBUT1AtU0wwTU9URzk7MjAyNS0wNC0wNTswODowOTo1NyBwLiBtLjsyOzMwNzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, z, c" type="Integer" array="False" size=""/>
+            <declare name="e" type="String" array="False" size=""/>
+            <assign variable="x" expression="1"/>
+            <assign variable="y" expression="2"/>
+            <output expression="&quot;observa los primeros 64 numeros de la serie Fibonacci (presione enter para continuar)&quot;" newline="True"/>
+            <input variable="e"/>
+            <for variable="c" start="1" end="64" direction="inc" step="1">
+                <assign variable="z" expression="x+y"/>
+                <assign variable="x" expression="y"/>
+                <assign variable="y" expression="z"/>
+                <output expression="z" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

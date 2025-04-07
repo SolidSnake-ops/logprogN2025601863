@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="Juan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-05 12:20:55 p. m."/>
+        <attribute name="created" value="SnVhbjtMQVBUT1AtU0wwTU9URzk7MjAyNS0wNC0wNTsxMTo1MDowMiBhLiBtLjsyOTI2"/>
+        <attribute name="edited" value="SnVhbjtMQVBUT1AtU0wwTU9URzk7MjAyNS0wNC0wNTsxMjoyMDo1NSBwLiBtLjsxOzMwNTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <assign variable="f" expression="1"/>
+            <output expression="&quot;inserta un numero&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="n" start="n" end="1" direction="dec" step="1">
+                <output expression="n" newline="False"/>
+                <output expression="&quot;*&quot;" newline="True"/>
+                <assign variable="f" expression="n*f"/>
+            </for>
+            <output expression="&quot;Total:&quot;" newline="False"/>
+            <output expression="f" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>
